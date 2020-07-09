@@ -1,5 +1,5 @@
-# sts_modding_tutorial
-Getting into STS modding
+# Yet Another SlayTheSpire Modding Tutorial
+An alternative to some of the other tutorials out there (mostly for me own benefit to look back at, but it may help others as well). You'll need ModTheSpire and BaseMod to follow these steps. You should know some basic java and have some proficiency in using an IDE. This tutorial uses and assumes Intellij Idea (Community edition).
 
 ## Make a dedicated modding dev folder (assume we have ~/modding)
   - Make a ~/modding/lib folder
