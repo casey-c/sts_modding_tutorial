@@ -19,7 +19,7 @@ Getting into STS modding
 
 ## Alter the project structure to include the dependencies correctly
   - File->Project Structure (or Control+Alt+Shift+S)
-  - Navigate to the "Modules" subwindow
+  - Navigate to the "Modules" subwindow / Then select "Dependencies"
   - In my setup, the "Export" area only contains "1.8 Java" and "<Module Source>" -- we're missing the required dependencies from this list by default
       * We need to do the following steps for each .jar lib file we need to import
       * These are: desktop-1.0.jar, ModTheSpire.jar, and BaseMod.jar
