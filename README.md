@@ -63,3 +63,17 @@ Getting into STS modding
     * Search for "Maven" in the search box top right
     * Look for our package build option we just did, then right click it and add a shortcut
     * I use Ctrl+R for mine and it works pretty well
+    
+    
+## Running your mod in game
+  - If we were able to successfully build the JAR file, it should exist in the target/ directory.
+  - Note: where it gets built is set in the .pom file (more on this later)
+  - We need to copy this ExampleMod.jar into SlayTheSpire/mods (the game's mod directory, create it if it doesn't exist)
+  - We'll need to copy this over each time we build; the pom file already has an example line we can change to do this automatically
+    * At the bottom of the pom.xml file there should be a <copy> attribute
+    * Change the toFile to redirect into your SlayTheSpire folder instead. On my linux installation, this is: `/home/ojb/.steam/steam/steamapps/common/SlayTheSpire/mods/ExampleMod.jar`
+    * Each time you build (with Ctrl+R if you set up the shortcut earlier), your mod will be automatically copied into the right place and you can launch the game
+  - Launch SlayTheSpire (with mods). If all goes well, you should see your mod in the list to be enabled.
+  - Note: Inside the ModTheSpire launcher, there's also an option to show the debug output (which is pretty helpful)
+
+
